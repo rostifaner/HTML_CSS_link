@@ -1,52 +1,110 @@
+:root {
+  --primary-font: "Poppins", sans-serif;
+  --title-font: "Oswald", sans-serif;
+  --primary-black-color: #212121;
+  --primary-white-color: #ffffff;
+  --primary-accent-color: #03a9f4;
+  --secondary-accent-color: #0288d1;
+  --active-link-color: #f44336;
+}
+
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--primary-font);
+  color: var(--primary-black-color);
+  font-size: 14px;
+  background-color: var(--primary-white-color);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.page-header {
+  background-color: #e0e0e0;
+}
+
+.page-nav .link {
+  color: var(--primary-accent-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.page-nav .link:hover,
+.page-nav .list:focus {
+  color: var(--secondary-accent-color);
+}
+
+.page-nav .link:active {
+  color: var(--active-link-color);
 }
 
 .page-title {
-  font-size: 24px;
-  font-family: "Oswald", sans-serif;
-  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  line-height: 1.33;
+  letter-spacing: 3px;
 }
 
 .section-title {
   font-size: 20px;
   font-weight: 500;
-  font-family: "Oswald", sans-serif;
+  text-align: center;
+  line-height: 1.333;
+  letter-spacing: 1px;
 }
 
 .club-list .title {
   font-size: 16px;
-  font-family: "Oswald", sans-serif;
-}
-
-.page-nav .link {
-  color: #00bcd4;
-}
-
-.page-nav .link:hover,
-.page-nav .list:focus {
-  color: #18ffff;
-}
-
-.page-nav .link:active {
-  color: #212121;
+  text-transform: uppercase;
+  line-height: 1.333;
 }
 
 .club-list .link {
-  color: #ffc107;
+  color: var(--primary-accent-color);
   font-size: 14px;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .club-list .link:hover,
 .club-list .link:focus {
-  color: #f57f17;
+  color: var(--secondary-accent-color);
 }
 
 .club-list .link:active {
-  color: #ff1744;
+  color: var(--active-link-color);
 }
 
-.social-link .link {
-  color: teal;
+.downloads .link {
+  color: var(--primary-accent-color);
+  text-decoration: none;
+}
+
+.downloads .link:hover,
+.downloads .link:focus {
+  color: var(--secondary-accent-color);
+  text-decoration: underline;
+}
+
+.downloads .link:active {
+  color: var(--active-link-color);
+}
+
+.page-footer {
+  background-color: var(--primary-black-color);
+}
+
+.copyright-text {
+  color: var(--primary-white-color);
 }
